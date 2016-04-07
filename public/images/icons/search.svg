@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="31px" height="32px" viewBox="0 0 31 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
+    <title>search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Carousel30-Icons" sketch:type="MSArtboardGroup" transform="translate(-200.000000, -20.000000)" fill="#66B877">
+            <path d="M217.596401,39.8035078 C215.758565,41.1827888 213.474717,42 211,42 C204.924868,42 200,37.0751322 200,31 C200,24.9248678 204.924868,20 211,20 C217.075132,20 222,24.9248678 222,31 C222,34.2392888 220.599825,37.1515491 218.371681,39.164574 L230.020667,50.8135602 C230.216011,51.0089043 230.210367,51.3312637 230.020815,51.5208153 C229.825553,51.7160774 229.506334,51.7134407 229.31356,51.520667 L217.596401,39.8035078 Z M211,41 C216.522847,41 221,36.5228475 221,31 C221,25.4771525 216.522847,21 211,21 C205.477153,21 201,25.4771525 201,31 C201,36.5228475 205.477153,41 211,41 Z" id="search" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Carousel30 is a digital agency in Washington DC that specializes in web design, branding and marketing.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carousel 30 | Digital Agency</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+	
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,100,300,700" rel="stylesheet" type="text/css">
+	
+	<!-- Stylesheet -->
+	<link id="theme-style" rel="stylesheet" href="scss/style.css">
+	<link id="theme-style" rel="stylesheet" href="scss/animate.css">
+	<link id="theme-style" rel="stylesheet" href="scss/icons.css">
+	
+	<!-- Scripts -->
+	<script type="text/javascript" src="/scripts/animation.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="/scripts/site.js"></script>
+	<script type="text/javascript" src="/scripts/mail.js"></script>
+	
+
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="left">
+				<div class="logo"><img src="/images/logo.svg"></div>
+				<div class="phone-number">(703) 260-1180</div>
+			</div>
+			<div class="right">
+				<div class="button">
+					<a href="http://carousel30.com" class="easein">Find Out More</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="introduction" class="section">
+		<div class="container">
+			<div class="greeting">
+				<h1 class="animate fadeInUp">Creating Connections</h1>
+				<h2 class="animate fadeInUp">Carousel30 creates interactive experiences and campaigns that connect your customers with your brand.</h2>
+				<div class="button"><a class="smoothScroll animated fadeInUp easein" href="#contact">Contact Us</a></div>
+			</div>
+			<canvas id="canvas"></canvas>
+		</div>
+	</div>
+	
+		{{{ body }}}
+	
+	<div id="contact" class="section">
+		<div class="container">
+			<div class="heading">
+				<h1>Contact</h1>
+			</div>
+			<div class="left">
+				<h1>Let's Work Together!</h1>
+				<p>Carousel30 is a digital marketing agency based in Alexandria, VA and Washington DC specializing in Drupal website development, responsive design, system architecture, and search engine optimization.</p>
+				<div id="google" class="certification">
+					<div class="image-container">
+						<img src="images/icons/google.svg">
+					</div>
+					<div class="text">
+						Google Certified Partner
+					</div>
+				</div>
+				<div id="acquia" class="certification">
+					<div class="image-container">
+						<img src="images/icons/acquia.svg">
+					</div>
+					<div class="text">
+						Acquia Certified Partner
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="contact-form">
+					<div id="form-messages"></div>
+					<form id="ajax-contact" method="post" action="mail.php">
+						<input class="email" name="email" type="email" placeholder="Email">
+						<textarea class="message" name="message" type="text" placeholder="Message"></textarea>
+			            <input id="submit" class="button easein" name="submit" type="submit" value="Submit">
+			        </form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="left">
+				Carousel30 © 2015
+			</div>
+			<div class="right">
+				<a href="https://www.linkedin.com/company/carousel30">
+					<div id="linkedin" class="social-icon">
+						<img src="images/icons/linkedin.svg">
+					</div>
+				</a>
+				<a href="https://www.facebook.com/Carousel30">
+					<div id="facebook" class="social-icon">
+						<img src="images/icons/facebook.svg">
+					</div>
+				</a>
+				<a href="https://twitter.com/carousel30">
+					<div id="twitter" class="social-icon">
+						<img src="images/icons/twitter.svg">
+					</div>
+				</a>
+			</div>
+		</div>
+	</footer>
+	
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-XXXXX-X', 'auto');
+      ga('send', 'pageview');
+    </script>
+</body>

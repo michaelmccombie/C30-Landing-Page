@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="29px" height="33px" viewBox="0 0 29 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
+    <title>power</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Carousel30-Icons" sketch:type="MSArtboardGroup" transform="translate(-240.000000, -20.000000)" fill="#66B877">
+            <path d="M260,25.0794696 C265.280811,27.2459392 269,32.4386381 269,38.5 C269,46.5081289 262.508129,53 254.5,53 C246.491871,53 240,46.5081289 240,38.5 C240,32.4386381 243.719189,27.2459392 249,25.0794696 L249,26.1674956 C244.285532,28.2732224 241,33.0029226 241,38.5 C241,45.9558441 247.044156,52 254.5,52 C261.955844,52 268,45.9558441 268,38.5 C268,33.0029226 264.714468,28.2732224 260,26.1674956 L260,25.0794696 Z M254,20.4982674 C254,20.2230819 254.231934,20 254.5,20 C254.776142,20 255,20.2199066 255,20.4982674 L255,33.5017326 C255,33.7769181 254.768066,34 254.5,34 C254.223858,34 254,33.7800934 254,33.5017326 L254,20.4982674 Z" id="power" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,518 @@
+* {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+.button a {
+  color: white;
+  padding: 13px 45px;
+  border-radius: 10px; }
+
+.right, .left {
+  display: inline-block; }
+
+.right {
+  float: right; }
+
+.animated {
+  opacity: 1; }
+
+.easein {
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out; }
+
+body {
+  background-color: #2a2c2c;
+  font-family: Lato, Helvetica, sans-serif;
+  overflow-x: hidden; }
+
+header {
+  width: 100%;
+  padding: 30px 0;
+  position: absolute;
+  top: 0;
+  z-index: 3; }
+  header .logo {
+    display: inline-block; }
+    header .logo img {
+      height: 40px;
+      width: auto;
+      margin-right: 20px; }
+  header .phone-number {
+    color: #c2c2c2;
+    display: inline-block;
+    border-left: 1px solid #c2c2c2;
+    font-size: 14px;
+    vertical-align: top;
+    padding: 6px 20px;
+    margin-top: 6px; }
+  header .button {
+    float: right;
+    display: block;
+    margin-top: 10px; }
+    header .button a {
+      background-color: #424242; }
+      header .button a:hover {
+        background-color: #626262; }
+
+.section {
+  height: 100vh;
+  max-height: 750px;
+  min-height: 700px; }
+  .section .container {
+    padding-top: 90px; }
+  .section .heading {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px; }
+    .section .heading h1 {
+      font-size: 22px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #66b877;
+      padding-bottom: 6px; }
+    .section .heading h2 {
+      font-size: 18px;
+      font-weight: 300;
+      color: #969696; }
+  .section .one-third {
+    width: 33%;
+    display: inline-block;
+    margin: 50px 0;
+    opacity: 0;
+    vertical-align: top; }
+    .section .one-third .image {
+      display: inline-block;
+      width: 100px;
+      text-align: center;
+      padding-top: 30px;
+      vertical-align: top; }
+    .section .one-third .description {
+      display: inline-block;
+      padding: 0 25px;
+      max-width: 220px; }
+      .section .one-third .description h1 {
+        font-size: 18px;
+        font-weight: normal;
+        color: #3d3d3d;
+        padding-bottom: 10px; }
+      .section .one-third .description h2 {
+        font-size: 18px;
+        font-weight: 300;
+        color: #969696; }
+  .section .one-forth {
+    width: 25%;
+    display: inline-block;
+    margin: 50px 0;
+    opacity: 0;
+    text-align: center; }
+  .section:nth-child(odd) {
+    background-color: white; }
+  .section:nth-child(even) {
+    background-color: #f5f5f5; }
+
+#introduction {
+  background-color: #252525;
+  position: relative; }
+  #introduction .container .greeting {
+    position: absolute;
+    bottom: 100px; }
+    #introduction .container .greeting h1 {
+      font-size: 56px;
+      color: white;
+      font-weight: 500;
+      max-width: 630px;
+      margin-bottom: .3em;
+      animation-duration: 1s; }
+    #introduction .container .greeting h2 {
+      color: #c2c2c1;
+      font-weight: 300;
+      font-size: 21px;
+      margin-bottom: 2.5em;
+      max-width: 550px;
+      line-height: 1.7em;
+      animation-duration: 1s; }
+    #introduction .container .greeting .button a {
+      background-color: #66b877;
+      font-size: 20px;
+      animation-duration: 3s;
+      border-radius: 50px; }
+      #introduction .container .greeting .button a:hover {
+        background-color: #69d07f; }
+  #introduction .container canvas {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: -20%;
+    width: 70%;
+    height: 100%; }
+
+#technology .one-third .image {
+  background: white;
+  border-radius: 50%;
+  height: 100px;
+  padding: 0; }
+  #technology .one-third .image img {
+    padding-top: 24px;
+    width: 50px;
+    height: auto;
+    max-height: 50px; }
+#technology #responsive .image img {
+  padding-top: 32px; }
+#technology #content-management .image img {
+  padding-top: 26px; }
+
+#marketing .container .one-third .container {
+  padding: 0;
+  margin: 15px;
+  background: white;
+  border: 2px solid #ededed;
+  width: 360px;
+  height: 300px; }
+  #marketing .container .one-third .container .chart {
+    padding: 40px 35px; }
+    #marketing .container .one-third .container .chart canvas {
+      margin-bottom: 20px; }
+    #marketing .container .one-third .container .chart .caption h1 {
+      color: #3d3d3d;
+      font-size: 18px;
+      font-weight: normal;
+      padding-bottom: 10px; }
+    #marketing .container .one-third .container .chart .caption h2 {
+      font-size: 18px;
+      font-weight: 300;
+      color: #969696; }
+
+#case-studies {
+  z-index: 1; }
+  #case-studies .container #masseria .case-study {
+    background-image: url("/images/masseria.png"); }
+  #case-studies .container #national-association-state-foresters .case-study {
+    background-image: url("/images/national-association-state-foresters.png"); }
+  #case-studies .container #international-franchise-association .case-study {
+    background-image: url("/images/international-franchise-association.png"); }
+  #case-studies .container .one-third {
+    vertical-align: top; }
+    #case-studies .container .one-third .case-study {
+      width: 360px;
+      height: 300px;
+      margin: 15px;
+      position: relative; }
+      #case-studies .container .one-third .case-study .container {
+        padding: 35px;
+        height: 230px;
+        background: rgba(0, 0, 0, 0.4); }
+        #case-studies .container .one-third .case-study .container h1 {
+          font-size: 21px;
+          color: white;
+          width: 234px; }
+        #case-studies .container .one-third .case-study .container h2 {
+          text-transform: uppercase;
+          color: white;
+          font-weight: 500;
+          font-size: 10px;
+          padding-bottom: 4px; }
+        #case-studies .container .one-third .case-study .container .dividing-line {
+          height: 1px;
+          background-color: white;
+          width: 30px;
+          margin-bottom: 14px; }
+        #case-studies .container .one-third .case-study .container .action {
+          position: absolute;
+          bottom: 10px;
+          right: 24px; }
+          #case-studies .container .one-third .case-study .container .action h2 {
+            display: inline-block;
+            vertical-align: top;
+            padding: 10px 10px 0 0; }
+          #case-studies .container .one-third .case-study .container .action .action-button {
+            height: 30px;
+            width: 30px;
+            border: 1px solid white;
+            display: inline-block;
+            border-radius: 50%; }
+            #case-studies .container .one-third .case-study .container .action .action-button svg {
+              padding: 8px 0 0 12px; }
+              #case-studies .container .one-third .case-study .container .action .action-button svg path {
+                fill: white; }
+      #case-studies .container .one-third .case-study:hover .container {
+        background: rgba(0, 0, 0, 0.65); }
+        #case-studies .container .one-third .case-study:hover .container .action-button {
+          background: white; }
+          #case-studies .container .one-third .case-study:hover .container .action-button svg path {
+            fill: #3d3d3d; }
+
+#news .container .one-third {
+  vertical-align: top; }
+  #news .container .one-third .blogpost .container {
+    padding: 0 30px; }
+    #news .container .one-third .blogpost .container h1 {
+      font-size: 18px;
+      font-weight: normal;
+      color: #3d3d3d;
+      padding-bottom: 10px; }
+    #news .container .one-third .blogpost .container p {
+      font-size: 18px;
+      font-weight: 300;
+      color: #969696;
+      margin-bottom: 2em; }
+    #news .container .one-third .blogpost .container .read-more {
+      color: #66b877;
+      border-radius: 50px;
+      border: 1px solid #66b877;
+      padding: 10px 30px; }
+
+#services .one-third {
+  text-align: center; }
+  #services .one-third .image {
+    width: 170px;
+    margin-bottom: 15px;
+    background: white;
+    border-radius: 50%;
+    height: 170px;
+    padding: 0; }
+    #services .one-third .image svg {
+      margin-top: 20px; }
+  #services .one-third .description {
+    max-width: 100%; }
+
+#awards {
+  height: 1050px;
+  max-height: none; }
+  #awards .one-forth img {
+    width: 160px;
+    height: auto; }
+
+#location .gmap_overlay {
+  background: transparent;
+  position: relative;
+  width: 100%;
+  height: 570px;
+  top: 570px;
+  margin-top: -570px; }
+
+#contact {
+  background: #2a2c2c;
+  z-index: 2;
+  position: relative; }
+  #contact .container .heading {
+    text-align: left; }
+    #contact .container .heading h1 {
+      border-bottom: 2px solid;
+      width: 36px;
+      padding-bottom: 8px; }
+  #contact .container .right {
+    margin-top: 20px; }
+  #contact .container .left {
+    margin-top: 50px; }
+    #contact .container .left h1 {
+      font-size: 36px;
+      color: white;
+      padding-bottom: 20px; }
+    #contact .container .left p {
+      color: #c2c2c2;
+      font-size: 18px;
+      line-height: 30px;
+      max-width: 500px;
+      margin-bottom: 70px;
+      font-weight: 300; }
+    #contact .container .left .certification {
+      font-size: 18px;
+      color: #ebebeb;
+      margin: 5px 0; }
+      #contact .container .left .certification .image-container {
+        width: 45px;
+        height: 45px;
+        background-color: #424242;
+        border-radius: 50%;
+        display: inline-block; }
+      #contact .container .left .certification .text {
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 12px;
+        padding-left: 15px; }
+    #contact .container .left #google img {
+      padding: 11px; }
+    #contact .container .left #acquia img {
+      padding: 9px 12px; }
+  #contact .container input {
+    font-size: 18px;
+    font-family: Lato;
+    width: 480px;
+    height: 40px;
+    display: block;
+    margin: 15px 0;
+    padding: 0 0 0 20px; }
+  #contact .container .button {
+    color: white;
+    padding: 13px 45px;
+    border-radius: 10px;
+    background-color: #66b877;
+    border: none;
+    font-size: 18px;
+    font-family: Lato;
+    font-weight: bold;
+    max-width: 150px;
+    height: 40px;
+    padding-top: 9px; }
+    #contact .container .button:hover {
+      background-color: #69d07f; }
+  #contact .container textarea {
+    font-size: 18px;
+    font-family: Lato;
+    width: 480px;
+    height: 250px;
+    padding: 14px 0 0 20px; }
+
+footer {
+  background: #252525;
+  color: #ebebeb; }
+  footer .container {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  footer .right {
+    margin-top: -4px; }
+    footer .right .social-icon {
+      display: inline-block;
+      margin: 0 2px; }
+      footer .right .social-icon img {
+        width: 32px;
+        height: 32px;
+        background: #424242;
+        border-radius: 50%; }
+        footer .right .social-icon img:hover {
+          background: #5d5d5d; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 70px; }
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 30px; }
+
+  .section {
+    max-height: none;
+    height: auto; }
+
+  #technology .one-third {
+    width: 50%;
+    text-align: center; }
+    #technology .one-third .description {
+      text-align: left; }
+
+  #case-studies .container {
+    padding-bottom: 50px; }
+    #case-studies .container .one-third {
+      width: 100%;
+      margin: 0; }
+      #case-studies .container .one-third .case-study {
+        margin: 20px auto; }
+
+  #contact .left {
+    margin: 50px 0; }
+    #contact .left h1 {
+      font-size: 32px; }
+    #contact .left p {
+      font-size: 16px; }
+  #contact .left .right {
+    display: block; }
+  #contact .right {
+    float: none;
+    margin-bottom: 50px; } }
+@media (max-width: 980px) {
+  .section .one-forth {
+    width: 33%; }
+
+  #awards {
+    height: auto; } }
+@media (max-width: 900px) {
+  #news .one-third {
+    width: 100%; } }
+@media (max-width: 820px) {
+  #technology {
+    padding-bottom: 50px; }
+    #technology .one-third {
+      width: 100%;
+      margin: 30px 0; } }
+@media (max-width: 780px) {
+  .section .one-forth {
+    width: 50%; } }
+@media (max-width: 675px) {
+  #services {
+    padding-bottom: 50px; }
+    #services .one-third {
+      width: 100%;
+      margin: 20px 0; }
+      #services .one-third .image {
+        display: block;
+        margin: 0 auto; }
+      #services .one-third .description {
+        display: block;
+        max-width: 200px;
+        margin: 0 auto; } }
+@media (max-width: 580px) {
+  #awards .container {
+    padding-bottom: 50px; }
+    #awards .container .one-forth {
+      margin: 20px 0; }
+      #awards .container .one-forth img {
+        width: 100px;
+        height: 50px; }
+
+  header .phone-number {
+    display: none; }
+  header .button a {
+    font-size: 14px;
+    padding: 10px 30px; }
+
+  #introduction .container .greeting {
+    z-index: 3;
+    padding-right: 30px;
+    bottom: 70px; }
+    #introduction .container .greeting h1 {
+      font-size: 34px; }
+    #introduction .container .greeting h2 {
+      font-size: 18px;
+      max-width: 450px; }
+  #introduction .container canvas {
+    display: none; }
+
+  #contact .container .left {
+    margin-bottom: 20px; }
+    #contact .container .left h1 {
+      font-size: 28px; }
+    #contact .container .left p {
+      font-size: 14px;
+      margin-bottom: 0; }
+    #contact .container .left .certification {
+      display: none; }
+  #contact .container .right {
+    width: 100%; }
+    #contact .container .right input {
+      box-sizing: border-box;
+      width: 100%; }
+    #contact .container .right textarea {
+      box-sizing: border-box;
+      width: 100%; } }
+@media (max-width: 400px) {
+  .section {
+    min-height: 655px; }
+
+  header .phone-number {
+    display: none; }
+  header .button a {
+    font-size: 14px;
+    padding: 10px 20px; }
+
+  #technology .one-third .description {
+    text-align: center; }
+  #technology .one-third .image {
+    margin-bottom: 20px; }
+
+  #case-studies .container .one-third .case-study {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

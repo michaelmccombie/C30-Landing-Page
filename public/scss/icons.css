@@ -1,0 +1,668 @@
+.animatedSVG path, .animatedSVG circle, .animatedSVG line {
+    fill:none;
+    stroke: #66b877;
+    stroke-width:2;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+    animation-duration: 3s;
+    transition-timing-function: ease-in-out;
+}
+#lightbulb {
+    stroke-dasharray: 260;
+}
+#s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9, #s10, #s11, #s1-2, #s2-2, #s3-2, #s4-2, #s5-2, #s6-2, #s7-2, #s8-2, #s9-2, #s10-2, #s11-2  {
+    stroke-dasharray: 14;
+}
+#coil1, #coil2, #coil3, #coil4 {
+    stroke-dasharray: 28;
+}
+#lightbulb.animate {
+    animation-name: lightbulb;
+}
+#coil1.animate, #coil2.animate, #coil3.animate, #coil4.animate {
+    animation-name: coil;
+}
+#s1.animate {
+    animation-name: s1;
+}
+#s2.animate {
+    animation-name: s2;
+}
+#s3.animate {
+    animation-name: s3;
+}
+#s4.animate {
+    animation-name: s4;
+}
+#s5.animate {
+    animation-name: s5;
+}
+#s6.animate {
+    animation-name: s6;
+}
+#s7.animate {
+    animation-name: s7;
+}
+#s8.animate {
+    animation-name: s8;
+}
+#s9.animate {
+    animation-name: s9;
+}
+#s10.animate {
+    animation-name: s10;
+}
+#s11.animate {
+    animation-name: s11;
+}
+@keyframes lightbulb {
+    0% {
+        stroke-dashoffset: 260;
+    }
+    66% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes coil {
+    0%, 16.6% {
+        stroke-dashoffset: 28;
+    }
+    46.6% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s1 {
+    0%, 56% {
+        stroke-dashoffset: 14;
+    }
+    69% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s2 {
+    0%, 59% {
+        stroke-dashoffset: 14;
+    }
+    72% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s3 {
+    0%, 62% {
+        stroke-dashoffset: 14;
+    }
+    75% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s4 {
+    0%, 65% {
+        stroke-dashoffset: 14;
+    }
+    78% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s5 {
+    0%, 68% {
+        stroke-dashoffset: 14;
+    }
+    81% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s6 {
+    0%, 71% {
+        stroke-dashoffset: 14;
+    }
+    84% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s7 {
+    0%, 74% {
+        stroke-dashoffset: 14;
+    }
+    87% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s8 {
+    0%, 77% {
+        stroke-dashoffset: 14;
+    }
+    90% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s9 {
+    0%, 80% {
+        stroke-dashoffset: 14;
+    }
+    93% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s10 {
+    0%, 83% {
+        stroke-dashoffset: 14;
+    }
+    96% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s11 {
+    0%, 86% {
+        stroke-dashoffset: 14;
+    }
+    99% {
+        stroke-dashoffset: 0;
+    }
+}
+#branding-link:hover #s1-2 {
+    animation-name: s1-2;
+}
+#branding-link:hover #s2-2 {
+    animation-name: s2-2;
+}
+#branding-link:hover #s3-2 {
+    animation-name: s3-2;
+}
+#branding-link:hover #s4-2 {
+    animation-name: s4-2;
+}
+#branding-link:hover #s5-2 {
+    animation-name: s5-2;
+}
+#branding-link:hover #s6-2 {
+    animation-name: s6-2;
+}
+#branding-link:hover #s7-2 {
+    animation-name: s7-2;
+}
+#branding-link:hover #s8-2 {
+    animation-name: s8-2;
+}
+#branding-link:hover #s9-2 {
+    animation-name: s9-2;
+}
+#branding-link:hover #s10-2 {
+    animation-name: s10-2;
+}
+#branding-link:hover #s11-2 {
+    animation-name: s11-2;
+}
+@keyframes s1-2 {
+    0% {
+        stroke-dashoffset: 14;
+    }
+    13% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s2-2 {
+    0%, 3% {
+        stroke-dashoffset: 14;
+    }
+    16% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s3-2 {
+    0%, 6% {
+        stroke-dashoffset: 14;
+    }
+    19% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s4-2 {
+    0%, 9% {
+        stroke-dashoffset: 14;
+    }
+    22% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s5-2 {
+    0%, 12% {
+        stroke-dashoffset: 14;
+    }
+    25% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s6-2 {
+    0%, 15% {
+        stroke-dashoffset: 14;
+    }
+    28% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s7-2 {
+    0%, 18% {
+        stroke-dashoffset: 14;
+    }
+    31% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s8-2 {
+    0%, 21% {
+        stroke-dashoffset: 14;
+    }
+    34% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s9-2 {
+    0%, 24% {
+        stroke-dashoffset: 14;
+    }
+    37% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s10-2 {
+    0%, 27% {
+        stroke-dashoffset: 14;
+    }
+    40% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes s11-2 {
+    0%, 30% {
+        stroke-dashoffset: 14;
+    }
+    43% {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Marketing */
+#outer-box {
+    stroke-dasharray: 357;
+}
+#base {
+    stroke-dasharray: 104;
+}
+#inner-box {
+    stroke-dasharray: 311;
+}
+#circle1, #circle2, #circle3, #circle4, #circle1-2, #circle2-2, #circle3-2, #circle4-2 {
+    stroke-dasharray: 21;
+}
+#line1, #line2, #line3, #line1-2, #line2-2, #line3-2 {
+    stroke-dasharray: 28;
+}
+
+#outer-box.animate {
+    animation-name: outer-box;
+}
+#base.animate {
+    animation-name: base;
+}
+#inner-box.animate {
+    animation-name: inner-box;
+}
+#circle1.animate {
+    animation-name: circle1;
+}
+#circle2.animate {
+    animation-name: circle2;
+}
+#circle3.animate {
+    animation-name: circle3;
+}
+#circle4.animate {
+    animation-name: circle4;
+}
+#line1.animate {
+    animation-name: line1;
+}
+#line2.animate {
+    animation-name: line2;
+}
+#line3.animate {
+    animation-name: line3;
+}
+
+
+@keyframes outer-box {
+    0% {
+        stroke-dashoffset: 357;
+    }
+    30% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes base {
+    0%, 5% {
+        stroke-dashoffset: 104;
+    }
+    30% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes inner-box {
+    0%, 30% {
+        stroke-dashoffset: 311;
+    }
+    60% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes circle1 {
+    0%, 65% {
+        stroke-dashoffset: 21;
+    }
+    70% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes circle2 {
+    0%, 70% {
+        stroke-dashoffset: 21;
+    }
+    75% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes circle3 {
+    0%, 75% {
+        stroke-dashoffset: 21;
+    }
+    80% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes circle4 {
+    0%, 80% {
+        stroke-dashoffset: 21;
+    }
+    85% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes line1 {
+    0%, 85% {
+        stroke-dashoffset: 28;
+    }
+    90% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes line2 {
+    0%, 90% {
+        stroke-dashoffset: 28;
+    }
+    95% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes line3 {
+    0%, 95% {
+        stroke-dashoffset: 28;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+#marketing-link:hover #circle1-2 {
+    animation-name: circle1-2;
+}
+#marketing-link:hover #circle2-2 {
+    animation-name: circle2-2;
+}
+#marketing-link:hover #circle3-2 {
+    animation-name: circle3-2;
+}
+#marketing-link:hover #circle4-2 {
+    animation-name: circle4-2;
+}
+#marketing-link:hover #line1-2 {
+    animation-name: line1-2;
+}
+#marketing-link:hover #line2-2 {
+    animation-name: line2-2;
+}
+#marketing-link:hover #line3-2 {
+    animation-name: line3-2;
+}
+
+@keyframes circle1-2 {
+    0% {
+        stroke-dashoffset: 21;
+    }
+    5% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes circle2-2 {
+    0%, 5% {
+        stroke-dashoffset: 21;
+    }
+    10% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes circle3-2 {
+    0%, 10% {
+        stroke-dashoffset: 21;
+    }
+    15% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes circle4-2 {
+    0%, 15% {
+        stroke-dashoffset: 21;
+    }
+    20% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes line1-2 {
+    0%, 20% {
+        stroke-dashoffset: 28;
+    }
+    25% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes line2-2 {
+    0%, 25% {
+        stroke-dashoffset: 28;
+    }
+    30% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes line3-2 {
+    0%, 30% {
+        stroke-dashoffset: 28;
+    }
+    35% {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Interactive */
+#outer-frame {
+    stroke-dasharray: 343;
+}
+#home-button {
+    stroke-dasharray: 26;
+} 
+#inner-frame {
+    stroke-dasharray: 272;
+} 
+#speaker {
+    stroke-dasharray: 26;
+}
+#st1, #st2, #st3, #st4, #st1-2, #st2-2, #st3-2, #st4-2 {
+    stroke-dasharray: 38;
+}
+#st5, #st5-2 {
+    stroke-dasharray: 28;
+}
+#outer-frame.animate {
+    animation-name: outer-frame;
+}
+#home-button.animate {
+    animation-name: home-button;
+} 
+#inner-frame.animate {
+    animation-name: inner-frame;
+} 
+#speaker.animate {
+    animation-name: speaker;
+}
+#st1.animate {
+    animation-name: st1;
+}
+#st2.animate {
+    animation-name: st2;
+}
+#st3.animate {
+    animation-name: st3;
+}
+#st4.animate {
+    animation-name: st4;
+}
+#st5.animate {
+    animation-name: st5;
+}
+
+@keyframes outer-frame {
+    0% {
+        stroke-dashoffset: 343;
+    }
+    25% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes speaker {
+    0%, 50% {
+        stroke-dashoffset: 26;
+    }
+    60% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes inner-frame {
+    0%,25% {
+        stroke-dashoffset: 272;
+    }
+    50% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes home-button {
+    0%, 60% {
+        stroke-dashoffset: 26;
+    }
+    75% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes st1 {
+    0%, 75% {
+        stroke-dashoffset: 38;
+    }
+    80% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes st2 {
+    0%, 80% {
+        stroke-dashoffset: 38;
+    }
+    85% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes st3 {
+    0%, 85% {
+        stroke-dashoffset: 38;
+    }
+    90% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes st4 {
+    0%, 90% {
+        stroke-dashoffset: 38;
+    }
+    95% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes st5 {
+    0%, 95% {
+        stroke-dashoffset: 28;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+#interactive-link:hover #st1-2 {
+    animation-name: st1-2;
+}
+#interactive-link:hover #st2-2 {
+    animation-name: st2-2;
+}
+#interactive-link:hover #st3-2 {
+    animation-name: st3-2;
+}
+#interactive-link:hover #st4-2 {
+    animation-name: st4-2;
+}
+#interactive-link:hover #st5-2 {
+    animation-name: st5-2;
+}
+
+@keyframes st1-2 {
+    0% {
+        stroke-dashoffset: 38;
+    }
+    5% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes st2-2 {
+    0%, 5% {
+        stroke-dashoffset: 38;
+    }
+    10% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes st3-2 {
+    0%, 10% {
+        stroke-dashoffset: 38;
+    }
+    15% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes st4-2 {
+    0%, 15% {
+        stroke-dashoffset: 38;
+    }
+    20% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes st5-2 {
+    0%, 20% {
+        stroke-dashoffset: 28;
+    }
+    25% {
+        stroke-dashoffset: 0;
+    }
+}
