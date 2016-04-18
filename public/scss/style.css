@@ -6,7 +6,7 @@ a {
 
 .button a {
   color: white;
-  padding: 13px 45px;
+  padding: 12px 32px;
   border-radius: 10px; }
 
 .right, .left {
@@ -23,13 +23,14 @@ a {
   transition: 0.25s ease-in-out; }
 
 body {
-  background-color: #2a2c2c;
+  background-color: #272829;
   font-family: Lato, Helvetica, sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased; }
 
 header {
   width: 100%;
-  padding: 30px 0;
+  padding: 2rem 0;
   position: absolute;
   top: 0;
   z-index: 3; }
@@ -39,105 +40,173 @@ header {
       height: 40px;
       width: auto;
       margin-right: 20px; }
+  header .logo {
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 3px 14px 0 0; }
   header .phone-number {
     color: #c2c2c2;
     display: inline-block;
     border-left: 1px solid #c2c2c2;
-    font-size: 14px;
+    font-size: 1rem;
     vertical-align: top;
-    padding: 6px 20px;
-    margin-top: 6px; }
+    padding: 3px 16px;
+    margin-top: 0; }
   header .button {
     float: right;
     display: block;
     margin-top: 10px; }
     header .button a {
-      background-color: #424242; }
+      background-color: #3B3D3F; }
       header .button a:hover {
         background-color: #626262; }
 
+nav {
+  position: fixed;
+  right: 1rem;
+  top: calc(50vh - 86px);
+  z-index: 1; }
+  nav ul {
+    border-radius: 30px;
+    list-style: none;
+    padding: .5rem; }
+    nav ul li {
+      display: block;
+      margin: .5rem 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 100%;
+      display: block;
+      background: none;
+      border: 2px solid white;
+      			/* &:last-child.active {
+      				border: 2px solid white;
+      				background: white;
+      			}
+      
+      			&:last-child.active ~ li {
+      				border: 2px solid white;
+      			} */ }
+      nav ul li.active {
+        background: white; }
+      nav ul li:hover {
+        background-color: white; }
+      nav ul li:nth-child(2).active, nav ul li:nth-child(3).active, nav ul li:nth-child(4).active, nav ul li:nth-child(5).active, nav ul li:nth-child(6).active, nav ul li:nth-child(7).active, nav ul li:nth-child(8).active, nav ul li:nth-child(9).active, nav ul li:nth-child(10).active {
+        border: 2px solid #41BC69;
+        background: #41BC69; }
+      nav ul li a {
+        width: 8px;
+        height: 8px;
+        display: block; }
+
+nav.scrolled ul li:hover {
+  background-color: #41BC69; }
+
+nav.scrolled ul li {
+  border: 2px solid #41BC69; }
+
+nav.scrolled ul li.active {
+  background: #41BC69; }
+
+nav ul > li:not(.active) {
+  border: 2px solid white; }
+
+nav.scrolled ul > li:not(.active) {
+  border: 2px solid #41BC69; }
+
 .section {
-  height: 100vh;
+  height: calc(100vh - 2px);
   max-height: 750px;
-  min-height: 700px; }
+  border-bottom: 2px solid #e5e6e8; }
   .section .container {
-    padding-top: 90px; }
+    padding: calc((100vh - 436px) / 2) 0; }
   .section .heading {
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 50px; }
+    margin-bottom: 51px; }
     .section .heading h1 {
-      font-size: 22px;
+      font-size: 24px;
       text-transform: uppercase;
-      font-weight: bold;
-      color: #66b877;
-      padding-bottom: 6px; }
+      font-weight: 700;
+      color: #41BC69;
+      padding-bottom: 7px;
+      letter-spacing: .24px;
+      padding-top: 2px; }
     .section .heading h2 {
-      font-size: 18px;
-      font-weight: 300;
-      color: #969696; }
+      font-size: 16px;
+      font-weight: 400;
+      color: #9B9B9B;
+      letter-spacing: .16px; }
   .section .one-third {
-    width: 33%;
+    width: calc((100%/3) - 2rem);
     display: inline-block;
-    margin: 50px 0;
+    margin: 1rem 1rem 28px 1rem;
     opacity: 0;
     vertical-align: top; }
     .section .one-third .image {
-      display: inline-block;
-      width: 100px;
+      display: block;
+      width: 32px;
       text-align: center;
-      padding-top: 30px;
+      padding-top: 0;
       vertical-align: top; }
     .section .one-third .description {
-      display: inline-block;
-      padding: 0 25px;
-      max-width: 220px; }
+      display: inline-block; }
       .section .one-third .description h1 {
-        font-size: 18px;
-        font-weight: normal;
-        color: #3d3d3d;
-        padding-bottom: 10px; }
+        color: #656565;
+        font-size: 1rem;
+        margin-bottom: 4px;
+        font-weight: 700;
+        letter-spacing: .16px; }
       .section .one-third .description h2 {
-        font-size: 18px;
-        font-weight: 300;
-        color: #969696; }
+        color: #9B9B9B;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0; }
   .section .one-forth {
-    width: 25%;
+    width: calc(25% - 4rem);
     display: inline-block;
-    margin: 50px 0;
+    margin: 0 2rem 2rem 2rem;
     opacity: 0;
     text-align: center; }
   .section:nth-child(odd) {
     background-color: white; }
   .section:nth-child(even) {
-    background-color: #f5f5f5; }
+    background-color: #fafafa; }
 
 #introduction {
-  background-color: #252525;
-  position: relative; }
+  background-color: #272829;
+  position: relative;
+  border-bottom: 2px solid #272829; }
   #introduction .container .greeting {
     position: absolute;
-    bottom: 100px; }
+    bottom: 94px; }
     #introduction .container .greeting h1 {
-      font-size: 56px;
+      font-size: 3rem;
       color: white;
-      font-weight: 500;
+      font-weight: 700;
       max-width: 630px;
-      margin-bottom: .3em;
-      animation-duration: 1s; }
+      margin-bottom: .72rem;
+      animation-duration: 1s;
+      letter-spacing: .48px; }
     #introduction .container .greeting h2 {
-      color: #c2c2c1;
-      font-weight: 300;
-      font-size: 21px;
-      margin-bottom: 2.5em;
-      max-width: 550px;
-      line-height: 1.7em;
-      animation-duration: 1s; }
-    #introduction .container .greeting .button a {
-      background-color: #66b877;
+      color: #c2c2c2;
+      font-weight: 400;
       font-size: 20px;
+      margin-bottom: 2.2rem;
+      max-width: 540px;
+      line-height: 28px;
+      animation-duration: 1s;
+      letter-spacing: .2px; }
+    #introduction .container .greeting .button a {
+      background-color: #41BC69;
+      font-size: 1rem;
       animation-duration: 3s;
-      border-radius: 50px; }
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: .2px;
+      font-weight: 700; }
       #introduction .container .greeting .button a:hover {
         background-color: #69d07f; }
   #introduction .container canvas {
@@ -149,15 +218,11 @@ header {
     height: 100%; }
 
 #technology .one-third .image {
-  background: white;
-  border-radius: 50%;
-  height: 100px;
-  padding: 0; }
-  #technology .one-third .image img {
-    padding-top: 24px;
-    width: 50px;
-    height: auto;
-    max-height: 50px; }
+  margin-bottom: 13px;
+  margin-top: -3px; }
+  #technology .one-third .image svg {
+    width: 32px;
+    height: 32px; }
 #technology #responsive .image img {
   padding-top: 32px; }
 #technology #content-management .image img {
@@ -175,7 +240,7 @@ header {
     #marketing .container .one-third .container .chart canvas {
       margin-bottom: 20px; }
     #marketing .container .one-third .container .chart .caption h1 {
-      color: #3d3d3d;
+      color: #656565;
       font-size: 18px;
       font-weight: normal;
       padding-bottom: 10px; }
@@ -184,105 +249,119 @@ header {
       font-weight: 300;
       color: #969696; }
 
-#case-studies {
-  z-index: 1; }
-  #case-studies .container #masseria .case-study {
-    background-image: url("/images/masseria.png"); }
-  #case-studies .container #national-association-state-foresters .case-study {
-    background-image: url("/images/national-association-state-foresters.png"); }
-  #case-studies .container #international-franchise-association .case-study {
-    background-image: url("/images/international-franchise-association.png"); }
-  #case-studies .container .one-third {
-    vertical-align: top; }
-    #case-studies .container .one-third .case-study {
-      width: 360px;
-      height: 300px;
-      margin: 15px;
-      position: relative; }
-      #case-studies .container .one-third .case-study .container {
-        padding: 35px;
-        height: 230px;
-        background: rgba(0, 0, 0, 0.4); }
-        #case-studies .container .one-third .case-study .container h1 {
-          font-size: 21px;
-          color: white;
-          width: 234px; }
-        #case-studies .container .one-third .case-study .container h2 {
-          text-transform: uppercase;
-          color: white;
-          font-weight: 500;
-          font-size: 10px;
-          padding-bottom: 4px; }
-        #case-studies .container .one-third .case-study .container .dividing-line {
-          height: 1px;
-          background-color: white;
-          width: 30px;
-          margin-bottom: 14px; }
-        #case-studies .container .one-third .case-study .container .action {
-          position: absolute;
-          bottom: 10px;
-          right: 24px; }
-          #case-studies .container .one-third .case-study .container .action h2 {
-            display: inline-block;
-            vertical-align: top;
-            padding: 10px 10px 0 0; }
-          #case-studies .container .one-third .case-study .container .action .action-button {
-            height: 30px;
-            width: 30px;
-            border: 1px solid white;
-            display: inline-block;
-            border-radius: 50%; }
-            #case-studies .container .one-third .case-study .container .action .action-button svg {
-              padding: 8px 0 0 12px; }
-              #case-studies .container .one-third .case-study .container .action .action-button svg path {
-                fill: white; }
-      #case-studies .container .one-third .case-study:hover .container {
-        background: rgba(0, 0, 0, 0.65); }
-        #case-studies .container .one-third .case-study:hover .container .action-button {
-          background: white; }
-          #case-studies .container .one-third .case-study:hover .container .action-button svg path {
-            fill: #3d3d3d; }
+#case-studies .container #masseria .case-study {
+  background-image: url("/images/masseria.png"); }
+#case-studies .container #national-association-state-foresters .case-study {
+  background-image: url("/images/national-association-state-foresters.png"); }
+#case-studies .container #international-franchise-association .case-study {
+  background-image: url("/images/international-franchise-association.png"); }
+#case-studies .container .one-third {
+  vertical-align: top;
+  margin: 0 .5rem;
+  width: calc((100%/3) - 1rem); }
+  #case-studies .container .one-third .case-study {
+    margin: 0;
+    position: relative; }
+    #case-studies .container .one-third .case-study .container {
+      padding: 1rem;
+      height: 14rem;
+      background: rgba(0, 0, 0, 0.4); }
+      #case-studies .container .one-third .case-study .container h1 {
+        font-size: 21px;
+        color: white;
+        width: 234px; }
+      #case-studies .container .one-third .case-study .container h2 {
+        text-transform: uppercase;
+        color: white;
+        font-weight: 700;
+        font-size: 12px;
+        padding-bottom: 4px; }
+      #case-studies .container .one-third .case-study .container .dividing-line {
+        height: 1px;
+        background-color: white;
+        width: 30px;
+        margin-bottom: 14px; }
+      #case-studies .container .one-third .case-study .container .action {
+        position: absolute;
+        bottom: 10px;
+        right: 24px; }
+        #case-studies .container .one-third .case-study .container .action h2 {
+          display: inline-block;
+          vertical-align: top;
+          padding: 5px 8px 0 0;
+          text-transform: capitalize; }
+        #case-studies .container .one-third .case-study .container .action .action-button {
+          height: 24px;
+          width: 24px;
+          border: 1px solid white;
+          display: inline-block;
+          border-radius: 50%; }
+          #case-studies .container .one-third .case-study .container .action .action-button svg {
+            padding: 6px 0 0 9px; }
+            #case-studies .container .one-third .case-study .container .action .action-button svg path {
+              fill: white; }
+    #case-studies .container .one-third .case-study:hover .container {
+      background: rgba(0, 0, 0, 0.65); }
+      #case-studies .container .one-third .case-study:hover .container .action-button {
+        background: white; }
+        #case-studies .container .one-third .case-study:hover .container .action-button svg path {
+          fill: #656565; }
 
 #news .container .one-third {
-  vertical-align: top; }
-  #news .container .one-third .blogpost .container {
-    padding: 0 30px; }
-    #news .container .one-third .blogpost .container h1 {
-      font-size: 18px;
-      font-weight: normal;
-      color: #3d3d3d;
-      padding-bottom: 10px; }
-    #news .container .one-third .blogpost .container p {
-      font-size: 18px;
-      font-weight: 300;
-      color: #969696;
-      margin-bottom: 2em; }
-    #news .container .one-third .blogpost .container .read-more {
-      color: #66b877;
-      border-radius: 50px;
-      border: 1px solid #66b877;
-      padding: 10px 30px; }
+  vertical-align: top;
+  margin: 0 1rem; }
+  #news .container .one-third .container {
+    padding: 0; }
+    #news .container .one-third .container img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1.5rem; }
+    #news .container .one-third .container h1 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #656565;
+      padding-bottom: 4px;
+      letter-spacing: .16px; }
+    #news .container .one-third .container p {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #9B9B9B;
+      margin-bottom: 12px;
+      line-height: 24px; }
+    #news .container .one-third .container .read-more {
+      color: #41BC69;
+      padding: 0;
+      font-weight: 700; }
 
 #services .one-third {
   text-align: center; }
   #services .one-third .image {
     width: 170px;
     margin-bottom: 15px;
-    background: white;
-    border-radius: 50%;
-    height: 170px;
-    padding: 0; }
+    height: 190px;
+    padding: 0;
+    margin: 0 auto; }
     #services .one-third .image svg {
       margin-top: 20px; }
   #services .one-third .description {
     max-width: 100%; }
 
 #awards {
-  height: 1050px;
   max-height: none; }
-  #awards .one-forth img {
-    width: 160px;
-    height: auto; }
+  #awards .container .one-forth svg {
+    margin-bottom: 6px; }
+  #awards .container .one-forth h1 {
+    color: #656565;
+    font-size: 1rem;
+    margin-bottom: 4px;
+    font-weight: 700;
+    letter-spacing: .16px; }
+  #awards .container .one-forth h2 {
+    color: #9B9B9B;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0; }
 
 #location .gmap_overlay {
   background: transparent;
@@ -293,101 +372,116 @@ header {
   margin-top: -570px; }
 
 #contact {
-  background: #2a2c2c;
-  z-index: 2;
-  position: relative; }
-  #contact .container .heading {
-    text-align: left; }
-    #contact .container .heading h1 {
-      border-bottom: 2px solid;
-      width: 36px;
-      padding-bottom: 8px; }
-  #contact .container .right {
-    margin-top: 20px; }
-  #contact .container .left {
-    margin-top: 50px; }
-    #contact .container .left h1 {
-      font-size: 36px;
+  background: #313233;
+  position: relative;
+  height: calc(100vh - 60px);
+  border: none; }
+  #contact .container {
+    padding-top: 102px; }
+    #contact .container .heading {
+      text-align: left; }
+      #contact .container .heading h1 {
+        border-bottom: 2px solid;
+        width: 36px;
+        padding-bottom: 8px;
+        font-weight: 700;
+        letter-spacing: .36px; }
+    #contact .container .right {
+      margin-top: 20px; }
+    #contact .container .left {
+      margin-top: 50px; }
+      #contact .container .left h1 {
+        font-size: 36px;
+        color: white;
+        padding-bottom: 19px;
+        font-weight: 700;
+        padding-bottom: 18px;
+        letter-spacing: .36px; }
+      #contact .container .left p {
+        color: #c2c2c2;
+        font-size: 16px;
+        line-height: 28px;
+        max-width: 480px;
+        margin-bottom: 62px;
+        font-weight: 400;
+        letter-spacing: .16px; }
+      #contact .container .left .certification {
+        font-size: 18px;
+        color: #ebebeb;
+        margin: 5px 0 13px 0; }
+        #contact .container .left .certification .image-container {
+          width: 40px;
+          height: 40px;
+          background-color: #3B3D3F;
+          border-radius: 50%;
+          display: inline-block; }
+        #contact .container .left .certification .text {
+          display: inline-block;
+          vertical-align: top;
+          padding-top: 8px;
+          padding-left: 12px;
+          font-weight: 700; }
+      #contact .container .left #google img {
+        padding: 8px; }
+      #contact .container .left #acquia img {
+        padding: 6px 9px; }
+    #contact .container input {
+      font-size: 1rem;
+      font-family: Lato;
+      width: 504px;
+      height: 29px;
+      display: block;
+      margin: 15px 0;
+      padding: 0 0 0 20px; }
+    #contact .container .button {
       color: white;
-      padding-bottom: 20px; }
-    #contact .container .left p {
-      color: #c2c2c2;
+      padding: 13px 45px;
+      border-radius: 10px;
+      background-color: #41BC69;
+      border: none;
       font-size: 18px;
-      line-height: 30px;
-      max-width: 500px;
-      margin-bottom: 70px;
-      font-weight: 300; }
-    #contact .container .left .certification {
+      font-family: Lato;
+      font-weight: bold;
+      max-width: 150px;
+      height: 40px;
+      padding-top: 9px; }
+      #contact .container .button:hover {
+        background-color: #69d07f; }
+    #contact .container textarea {
       font-size: 18px;
-      color: #ebebeb;
-      margin: 5px 0; }
-      #contact .container .left .certification .image-container {
-        width: 45px;
-        height: 45px;
-        background-color: #424242;
-        border-radius: 50%;
-        display: inline-block; }
-      #contact .container .left .certification .text {
-        display: inline-block;
-        vertical-align: top;
-        padding-top: 12px;
-        padding-left: 15px; }
-    #contact .container .left #google img {
-      padding: 11px; }
-    #contact .container .left #acquia img {
-      padding: 9px 12px; }
-  #contact .container input {
-    font-size: 18px;
-    font-family: Lato;
-    width: 480px;
-    height: 40px;
-    display: block;
-    margin: 15px 0;
-    padding: 0 0 0 20px; }
-  #contact .container .button {
-    color: white;
-    padding: 13px 45px;
-    border-radius: 10px;
-    background-color: #66b877;
-    border: none;
-    font-size: 18px;
-    font-family: Lato;
-    font-weight: bold;
-    max-width: 150px;
-    height: 40px;
-    padding-top: 9px; }
-    #contact .container .button:hover {
-      background-color: #69d07f; }
-  #contact .container textarea {
-    font-size: 18px;
-    font-family: Lato;
-    width: 480px;
-    height: 250px;
-    padding: 14px 0 0 20px; }
+      font-family: Lato;
+      width: 506px;
+      height: 250px;
+      padding: 14px 0 0 20px; }
 
 footer {
-  background: #252525;
-  color: #ebebeb; }
+  background: #272829;
+  color: #ebebeb;
+  font-weight: 700; }
   footer .container {
-    padding-top: 30px;
-    padding-bottom: 30px; }
+    padding: 20px 0 21px 0; }
   footer .right {
-    margin-top: -4px; }
+    margin-top: -6px; }
     footer .right .social-icon {
       display: inline-block;
       margin: 0 2px; }
       footer .right .social-icon img {
         width: 32px;
         height: 32px;
-        background: #424242;
+        background: #3B3D3F;
         border-radius: 50%; }
         footer .right .social-icon img:hover {
           background: #5d5d5d; }
 
 .container {
   margin: 0 auto;
-  max-width: 1140px;
-  padding: 0 70px; }
+  max-width: 60rem; }
+
+#introduction .container,
+header .container,
+footer .container,
+#contact .container {
+  max-width: 70rem; }
 
 @media (max-width: 1200px) {
   .container {
@@ -514,5 +608,20 @@ footer {
 
   #case-studies .container .one-third .case-study {
     width: 100%; } }
+/* body {
+		scroll-snap-type: mandatory;
+		scroll-snap-points-y: repeat(100vh);
+		scroll-behaviour: smooth;
+		overflow: scroll;
+		height: 100vh;
+} */
+html, body, section {
+  padding: 0;
+  margin: 0; }
+
+section {
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */

@@ -20,22 +20,23 @@
     <!-- Tile icon for Win8 (144x144 + tile color) -->
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF">
-	
+
 	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,100,300,700" rel="stylesheet" type="text/css">
-	
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+
 	<!-- Stylesheet -->
 	<link id="theme-style" rel="stylesheet" href="scss/style.css">
 	<link id="theme-style" rel="stylesheet" href="scss/animate.css">
 	<link id="theme-style" rel="stylesheet" href="scss/icons.css">
-	
+
 	<!-- Scripts -->
 	<script type="text/javascript" src="/scripts/animation.js"></script>
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="/scripts/site.js"></script>
 	<script type="text/javascript" src="/scripts/mail.js"></script>
-	
+  <script type="text/javascript" src="/scripts/polyfill.js"></script>
+  <script type="text/javascript" src="/scripts/scrollsnap-polyfill.js"></script>
 
 
 </head>
@@ -43,36 +44,56 @@
 	<header>
 		<div class="container">
 			<div class="left">
-				<div class="logo"><img src="/images/logo.svg"></div>
+				<div class="logo">Carousel30</div>
 				<div class="phone-number">(703) 260-1180</div>
-			</div>
-			<div class="right">
-				<div class="button">
-					<a href="http://carousel30.com" class="easein">Find Out More</a>
-				</div>
 			</div>
 		</div>
 	</header>
-	<div id="introduction" class="section">
+	<section id="introduction" class="section">
 		<div class="container">
 			<div class="greeting">
 				<h1 class="animate fadeInUp">Creating Connections</h1>
 				<h2 class="animate fadeInUp">Carousel30 creates interactive experiences and campaigns that connect your customers with your brand.</h2>
-				<div class="button"><a class="smoothScroll animated fadeInUp easein" href="#contact">Contact Us</a></div>
+				<div class="button"><a class="smoothScroll animated fadeInUp easein" href="#contact">Contact</a></div>
 			</div>
 			<canvas id="canvas"></canvas>
 		</div>
-	</div>
-	
+	</section>
+
+  <nav>
+  	<ul>
+  		<li class="active easein"><a href="#introduction" class="smoothScroll animated"></a></li>
+  		{{#if showServices}}
+  		<li><a href="#services" class="smoothScroll animated easein"></a></li>
+  		{{/if}}
+  		{{#if showTechnology}}
+  		<li><a href="#technology" class="smoothScroll animated easein"></a></li>
+  		{{/if}}
+  		{{#if showMarketing}}
+  		<li><a href="#marketing" class="smoothScroll animated easein"></a></li>
+  		{{/if}}
+  		{{#if showCaseStudies}}
+  		<li><a href="#case-studies" class="smoothScroll animated easein"></a></li>
+  		{{/if}}
+      {{#if showNews}}
+  		<li><a href="#news" class="smoothScroll animated easein"></a></li>
+  		{{/if}}
+      {{#if showAwards}}
+  		<li><a href="#awards" class="smoothScroll animated easein"></a></li>
+  		{{/if}}
+      {{#if showLocation}}
+  		<li><a href="#location" class="smoothScroll animated easein"></a></li>
+  		{{/if}}
+      <li><a href="#contact" class="smoothScroll animated easein"></a></li>
+  	</ul>
+  </nav>
+
 		{{{ body }}}
-	
-	<div id="contact" class="section">
+
+	<section id="contact" class="section">
 		<div class="container">
-			<div class="heading">
-				<h1>Contact</h1>
-			</div>
 			<div class="left">
-				<h1>Let's Work Together!</h1>
+				<h1>Let's work together!</h1>
 				<p>Carousel30 is a digital marketing agency based in Alexandria, VA and Washington DC specializing in Drupal website development, responsive design, system architecture, and search engine optimization.</p>
 				<div id="google" class="certification">
 					<div class="image-container">
@@ -95,6 +116,7 @@
 				<div class="contact-form">
 					<div id="form-messages"></div>
 					<form id="ajax-contact" method="post" action="mail.php">
+            <input class="name" name="name" type="name" placeholder="Name">
 						<input class="email" name="email" type="email" placeholder="Email">
 						<textarea class="message" name="message" type="text" placeholder="Message"></textarea>
 			            <input id="submit" class="button easein" name="submit" type="submit" value="Submit">
@@ -102,7 +124,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 	<footer>
 		<div class="container">
 			<div class="left">
@@ -127,7 +149,7 @@
 			</div>
 		</div>
 	</footer>
-	
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

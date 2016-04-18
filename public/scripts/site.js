@@ -18,6 +18,7 @@ $(function() {
 });
 
 
+
 // Animate on View
 
 $(function() {
@@ -48,6 +49,41 @@ $(function() {
 	$window.on('scroll resize', check_if_in_view);
 	$window.trigger('scroll');
 });
+
+// Active Class - Navigation
+
+$(document).ready(function() {
+  $(document).on("scroll", onScroll);
+
+  function onScroll(event) {
+    var scrollPos = $(document).scrollTop();
+    $('nav a').each(function() {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      var parentLink = $(this).parent();
+      if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        $('nav ul li').removeClass("active");
+        parentLink.addClass("active");
+      } else {
+        parentLink.removeClass("active");
+      }
+    });
+  }
+});
+
+$(document).scroll(function(){
+     $('nav').toggleClass('scrolled', $(this).scrollTop() > 410);
+ });
+
+//$(window).on("scroll", function() {
+//	var scrollHeight = $(document).height();
+//  var windowHeight = $(window).height();
+//	var scrollPosition = $(window).height() + $(window).scrollTop();
+//	if ((scrollHeight - scrollPosition) / scrollHeight === 1) {
+	    // when scroll to bottom of the page
+//      $('nav').toggleClass('blue');
+//	}
+//});
 
 // Chart JS - Chart 1 Bar
 
@@ -83,7 +119,7 @@ $(function() {
     var c = $('#chart1');
     var ct = c.get(0).getContext('2d');
     var ctx = document.getElementById("chart1").getContext("2d");
-    
+
     myBarChart = new Chart(ctx).Bar(data, options);
 });
 
@@ -110,7 +146,7 @@ $(function() {
     var c = $('#chart2');
     var ct = c.get(0).getContext('2d');
     var ctx = document.getElementById("chart2").getContext("2d");
-    
+
     myNewChart = new Chart(ct).Doughnut(data, options);
 });
 
@@ -152,6 +188,6 @@ $(function() {
     var c = $('#chart3');
     var ct = c.get(0).getContext('2d');
     var ctx = document.getElementById("chart3").getContext("2d");
-    
+
     var myLineChart = new Chart(ctx).Line(data, options);
 });

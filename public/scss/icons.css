@@ -1,7 +1,7 @@
 .animatedSVG path, .animatedSVG circle, .animatedSVG line {
     fill:none;
-    stroke: #66b877;
-    stroke-width:2;
+    stroke:#41BC69;
+    stroke-width:1.5;
     stroke-linecap:round;
     stroke-linejoin:round;
     stroke-miterlimit:10;
@@ -10,12 +10,14 @@
 }
 #lightbulb {
     stroke-dasharray: 260;
+    stroke: #8F9999;
 }
-#s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9, #s10, #s11, #s1-2, #s2-2, #s3-2, #s4-2, #s5-2, #s6-2, #s7-2, #s8-2, #s9-2, #s10-2, #s11-2  {
-    stroke-dasharray: 14;
+#s1, #s2, #s3, #s4, #s5, #s6, #s7, #s8, #s9, #s10, #s11 {
+    stroke-dasharray: 13.75;
 }
 #coil1, #coil2, #coil3, #coil4 {
     stroke-dasharray: 28;
+    stroke: #8F9999;
 }
 #lightbulb.animate {
     animation-name: lightbulb;
@@ -160,37 +162,37 @@
         stroke-dashoffset: 0;
     }
 }
-#branding-link:hover #s1-2 {
+#s1.animate2 {
     animation-name: s1-2;
 }
-#branding-link:hover #s2-2 {
+#s2.animate2 {
     animation-name: s2-2;
 }
-#branding-link:hover #s3-2 {
+#s3.animate2 {
     animation-name: s3-2;
 }
-#branding-link:hover #s4-2 {
+#s4.animate2 {
     animation-name: s4-2;
 }
-#branding-link:hover #s5-2 {
+#s5.animate2 {
     animation-name: s5-2;
 }
-#branding-link:hover #s6-2 {
+#s6.animate2 {
     animation-name: s6-2;
 }
-#branding-link:hover #s7-2 {
+#s7.animate2 {
     animation-name: s7-2;
 }
-#branding-link:hover #s8-2 {
+#s8.animate2 {
     animation-name: s8-2;
 }
-#branding-link:hover #s9-2 {
+#s9.animate2 {
     animation-name: s9-2;
 }
-#branding-link:hover #s10-2 {
+#s10.animate2 {
     animation-name: s10-2;
 }
-#branding-link:hover #s11-2 {
+#s11.animate2 {
     animation-name: s11-2;
 }
 @keyframes s1-2 {
@@ -285,18 +287,28 @@
 /* Marketing */
 #outer-box {
     stroke-dasharray: 357;
+    stroke: #8F9999;
+}
+#outer-box-background,
+#base-background {
+    stroke: none;
 }
 #base {
     stroke-dasharray: 104;
+    stroke: #8F9999;
 }
 #inner-box {
     stroke-dasharray: 311;
+    stroke: #8F9999;
 }
-#circle1, #circle2, #circle3, #circle4, #circle1-2, #circle2-2, #circle3-2, #circle4-2 {
+#inner-box-background {
+    stroke: none;
+}
+#circle1, #circle2, #circle3, #circle4 {
     stroke-dasharray: 21;
 }
-#line1, #line2, #line3, #line1-2, #line2-2, #line3-2 {
-    stroke-dasharray: 28;
+#line1, #line2, #line3 {
+    stroke-dasharray: 27.75;
 }
 
 #outer-box.animate {
@@ -411,28 +423,27 @@
         stroke-dashoffset: 0;
     }
 }
-#marketing-link:hover #circle1-2 {
+#circle1.animate2 {
     animation-name: circle1-2;
 }
-#marketing-link:hover #circle2-2 {
+#circle2.animate2 {
     animation-name: circle2-2;
 }
-#marketing-link:hover #circle3-2 {
+#circle3.animate2 {
     animation-name: circle3-2;
 }
-#marketing-link:hover #circle4-2 {
+#circle4.animate2 {
     animation-name: circle4-2;
 }
-#marketing-link:hover #line1-2 {
+#line1.animate2 {
     animation-name: line1-2;
 }
-#marketing-link:hover #line2-2 {
+#line2.animate2 {
     animation-name: line2-2;
 }
-#marketing-link:hover #line3-2 {
+#line3.animate2 {
     animation-name: line3-2;
 }
-
 @keyframes circle1-2 {
     0% {
         stroke-dashoffset: 21;
@@ -493,31 +504,41 @@
 /* Interactive */
 #outer-frame {
     stroke-dasharray: 343;
+    stroke: #8F9999;
+}
+#outer-frame-background {
+    stroke: none;
 }
 #home-button {
     stroke-dasharray: 26;
-} 
+    stroke: #8F9999;
+}
 #inner-frame {
     stroke-dasharray: 272;
-} 
+    stroke: #8F9999;
+}
+#inner-frame-background {
+    stroke: none;
+}
 #speaker {
     stroke-dasharray: 26;
+    stroke: #8F9999;
 }
-#st1, #st2, #st3, #st4, #st1-2, #st2-2, #st3-2, #st4-2 {
-    stroke-dasharray: 38;
+#st1, #st2, #st3, #st4 {
+    stroke-dasharray: 37.75;
 }
-#st5, #st5-2 {
-    stroke-dasharray: 28;
+#st5 {
+    stroke-dasharray: 27.75;
 }
 #outer-frame.animate {
     animation-name: outer-frame;
 }
 #home-button.animate {
     animation-name: home-button;
-} 
+}
 #inner-frame.animate {
     animation-name: inner-frame;
-} 
+}
 #speaker.animate {
     animation-name: speaker;
 }
@@ -610,19 +631,19 @@
     }
 }
 
-#interactive-link:hover #st1-2 {
+#st1.animate2 {
     animation-name: st1-2;
 }
-#interactive-link:hover #st2-2 {
+#st2.animate2 {
     animation-name: st2-2;
 }
-#interactive-link:hover #st3-2 {
+#st3.animate2 {
     animation-name: st3-2;
 }
-#interactive-link:hover #st4-2 {
+#st4.animate2 {
     animation-name: st4-2;
 }
-#interactive-link:hover #st5-2 {
+#st5.animate2 {
     animation-name: st5-2;
 }
 

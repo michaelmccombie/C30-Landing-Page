@@ -149,7 +149,7 @@ app.get('/technology-casestudies-news-awards-location', function(req, res) {
 	})
 });
 
-app.get('/casestudies-news-awards-location', function(req, res) {
+app.get('/casestudies+news+awards+location', function(req, res) {
 	res.render('index', {
 		showServices: false,
 		showTechnology: false,
